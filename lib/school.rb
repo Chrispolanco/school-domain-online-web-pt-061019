@@ -21,7 +21,7 @@ class School
     @roster
   end
 
-  if name.roster.key?(grade)
+  if add_a_student(grade, name)
     roster[grade] << name
   else
     roster[grade] = []
