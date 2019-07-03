@@ -21,7 +21,7 @@ class School
     @roster
   end
 
-  def add_a_student(grade, name)
+  def add_a_student(name, grade)
     if  roster[grade]
       roster[grade] << name
     else
