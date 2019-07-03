@@ -21,7 +21,7 @@ class School
   
   def sort
     hash = {}
-    roster.each do |grade, students|
+    roster.map do |grade, students|
       hash[grade] = students.sort
     end
   end
